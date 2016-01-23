@@ -32,7 +32,7 @@ pip install requests
 Given below are a list of commands you can speak
 * Download video_name:
   Downloads the youtube video.The default storage location is "D:\songs".
-  See the [source code] for changing the video qulity and default storage location
+  See the [source code] for changing the video quality and default storage location
 
 * Play video_name:
   Opens the video in the default webbrowser
