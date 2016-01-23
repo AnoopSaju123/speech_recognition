@@ -37,14 +37,15 @@ Given below are a list of commands you can speak
 * Play video_name:
   Opens the video in the default webbrowser
 
-* Open calculator and close calculator 
+* Open calculator and close calculator: 
   For opening and closing calculator
 
-* Open paint and close paint 
+* Open paint and close paint :
   For paint and closing paint
 
-* google search_word
+* google search_word:
   Searches the text in google in  the default webbrowser 
 
 [pafy]:<http://pythonhosted.org/Pafy/>
 [download]:<https://www.python.org/downloads/>
+[source code]:<https://github.com/AnoopSaju123/speech_recognition/blob/master/speech.py>
