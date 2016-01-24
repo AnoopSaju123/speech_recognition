@@ -61,16 +61,16 @@ while(loopme==1):
         elif(t.find("open")!=-1):                                                   # Open windows application
             le=t.find("open")+len("open")+1
             t=t[le:]
-            if(t=="calculator"):
+            if(t=="calculator" or t=="Calculator"):
                 os.system("start calc.exe")
                 mlist.append("calc.exe")
-            elif(t=="notepad"):
+            elif(t=="Notepad" or t=="notepad"):
                 os.system("start notepad.exe")
                 mlist.append("notepad.exe")
-            elif(t=="paint"):
+            elif(t=="Paint" or t=="paint"):
                 os.system("start mspaint.exe")
                 mlist.append("mspaint.exe")
-            elif(t.find("Chrome")!=-1):
+            elif((t.find("Chrome")!=-1) or (t.find("chrome")!=-1)):
                 os.system("start C:\Users\user\AppData\Local\Google\Chrome\Application\chrome.exe")
                 mlist.append("C:\Users\user\AppData\Local\Google\Chrome\Application\chrome.exe")
             
@@ -78,15 +78,15 @@ while(loopme==1):
             le=t.find("close")+len("close")+1
             t=t[le:]
             try:
-                if(t=="calculator"):
+                if(t=="calculator" or t=="Calculator"):
                     mlist.index("calc.exe")
                     os.system("taskkill /F /IM calc.exe")
                     mlist.remove("calc.exe")
-                elif(t=="notepad"):
+                elif(t=="Notepad" or t=="notepad"):
                     mlist.index("notepad.exe")
                     os.system("taskkill /F /IM notepad.exe")
                     mlist.remove("notepad.exe")
-                elif(t=="paint"):
+                elif(t=="Paint" or t=="paint"):
                     mlist.index("mspaint.exe")
                     os.system("taskkill /F /IM mspaint.exe")
                     mlist.remove("mspaint.exe")
@@ -97,8 +97,8 @@ while(loopme==1):
             except:
                     print "Could not close the applicarion"
                 
-        elif (t.find("google")!=-1):                                            
-            le=t.find("play")+len("play")+1
+        elif (t.find("Google")!=-1 ):                                            
+            le=t.find("Google")+len("Google")+1
             t=t[le:]
             webbrowser.open("https://www.google.co.in/search?q="+t)
             
